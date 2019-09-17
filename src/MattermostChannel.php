@@ -1,6 +1,6 @@
 <?php
 
-namespace ThibaudDauce\Mattermost;
+namespace rgergo67\Mattermost;
 
 use Illuminate\Notifications\Notification;
 
