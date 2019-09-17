@@ -1,8 +1,7 @@
 <?php
 
-namespace rgergo67\Mattermost;
+namespace Rgergo67\Mattermost;
 
-use GuzzleHttp\Client as HttpClient;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Notifications\ChannelManager;

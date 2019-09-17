@@ -1,23 +1,21 @@
 <?php
 
-namespace rgergo67\Mattermost;
+namespace Rgergo67\Mattermost;
 
 use Illuminate\Notifications\Notification;
+use Psr\Http\Message\ResponseInterface;
 
 class MattermostChannel
 {
     /**
-     * The Mattermost HTTP instance.
-     *
-     * @var \ThibaudDauce\Mattermost
+     * @var Mattermost
      */
     protected $mattermost;
 
     /**
      * Create a new Mattermost channel instance.
      *
-     * @param  \ThibaudDauce\Mattermost  $mattermost
-     * @return void
+     * @param  Mattermost  $mattermost
      */
     public function __construct(Mattermost $mattermost)
     {
@@ -28,9 +26,9 @@ class MattermostChannel
      * Send the given notification.
      *
      * @param  mixed  $notifiable
-     * @param  \Illuminate\Notifications\Notification  $notification
+     * @param  Notification  $notification
      *
-     * @return \Psr\Http\Message\ResponseInterface
+     * @return void
      */
     public function send($notifiable, Notification $notification)
     {

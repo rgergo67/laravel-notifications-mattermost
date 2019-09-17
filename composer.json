@@ -2,7 +2,7 @@
     "name": "rgergo67/laravel-notifications-mattermost",
     "description": "Send Laravel Notifications via Mattermost",
     "homepage": "https://github.com/thibaud-dauce/laravel-notifications-mattermost",
-    "version": "2.0.0",
+    "version": "2.1.1",
     "license": "MIT",
     "authors": [
         {
@@ -13,17 +13,18 @@
     ],
     "require": {
         "php": ">=5.6.4",
-        "illuminate/notifications": "^6.0"
+        "illuminate/notifications": "^6.0",
+        "guzzlehttp/guzzle": "^6.0"
     },
     "autoload": {
         "psr-4": {
-            "rgergo67\\Mattermost\\": "src"
+            "Rgergo67\\Mattermost\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "rgergo67\\Mattermost\\MattermostChannelServiceProvider"
+                "Rgergo67\\Mattermost\\MattermostChannelServiceProvider"
             ]
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace rgergo67\Mattermost;
+namespace Rgergo67\Mattermost;
 
 use GuzzleHttp\Client;
 
@@ -41,8 +41,7 @@ class Mattermost
 
         $this->mattermost->post($webhook, [
             'json' => $message->toArray(),
-        ], [
-            'Content-Type' => 'application/json',
+            'headers' => ['Content-type' => 'application/json']
         ]);
     }
 }

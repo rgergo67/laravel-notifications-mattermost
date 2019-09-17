@@ -1,6 +1,6 @@
 <?php
 
-namespace rgergo67\Mattermost;
+namespace Rgergo67\Mattermost;
 
 use Closure;
 
