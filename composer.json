@@ -2,7 +2,7 @@
     "name": "rgergo67/laravel-notifications-mattermost",
     "description": "Send Laravel Notifications via Mattermost",
     "homepage": "https://github.com/thibaud-dauce/laravel-notifications-mattermost",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "license": "MIT",
     "authors": [
         {
